@@ -1,39 +1,71 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Medical Web App - Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Emergency Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="medical-logo.png" alt="Medical Logo">
-        <h1>MediCare</h1>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#feedback">Feedback</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <img src="menu.png" class="menu-icon" onclick="toggleMenu()" alt="Menu Icon">
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <img src="Assets/med image.jpeg" alt="logo">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-area">
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#About Us">About Us</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Live Chat" class="active">Live Chat</a></li>
+                <li><a href="Review">Review</a></li>
+                <li><a href="emergencynumbers.html">Emergency Phone Numbers</a></li>
+            </ul>
+        </nav>
+        
+    </header>
 
-  <section class="hero">
-    <!-- ... Content of the hero section ... -->
-  </section>
+    <div class="home">
+        <div class="main-home">
+            <div class="main-inner-home">
+                <h1>The Need For</h1>
+                <h1>Prompt Emergency</h1>
+                <h1>Services</h1>
+                <br>
+                <p>We are dedicated to First Aid of Children,</p>
+                <p>Adolescents & Adults. We save lives by giving</p>
+                <p>immediate assitance</p>
+                <br>
+                <br>
+                <a href="signup.html" class="active">Sign Up</a>
+                <a href="#" class="inactive">Sign In</a>
+            </div>
+            <br>
+            <div class="main-inner-home">
+                <div class="right-content-img">
+                    <img src="Assets/Capture 1.jpg" alt="doctor-img">
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <!-- ... Rest of the page content ... -->
-
-  <footer>
-    <p>&copy; 2023 MediCare. All rights reserved.</p>
-  </footer>
-
-  <script src="landingpage.js"></script>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <footer>
+        <p>&copy; 2023 MediCare. All rights reserved.</p>
+      </footer>
 </body>
 
 </html>
