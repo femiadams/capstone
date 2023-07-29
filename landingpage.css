@@ -1,71 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Emergency Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <header>
-        <div class="logo">
-            <img src="Assets/med image.jpeg" alt="logo">
-        </div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="nav-bar">
-            <ul class="nav-area">
-                <li><a href="#Home" class="active">Home</a></li>
-                <li><a href="#About Us">About Us</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#Live Chat" class="active">Live Chat</a></li>
-                <li><a href="Review">Review</a></li>
-                <li><a href="emergencynumbers.html">Emergency Phone Numbers</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+body, h1, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
 
-    <div class="home">
-        <div class="main-home">
-            <div class="main-inner-home">
-                <h1>The Need For</h1>
-                <h1>Prompt Emergency</h1>
-                <h1>Services</h1>
-                <br>
-                <p>We are dedicated to First Aid of Children,</p>
-                <p>Adolescents & Adults. We save lives by giving</p>
-                <p>immediate assitance</p>
-                <br>
-                <br>
-                <a href="signup.html" class="active">Sign Up</a>
-                <a href="#" class="inactive">Sign In</a>
-            </div>
-            <br>
-            <div class="main-inner-home">
-                <div class="right-content-img">
-                    <img src="Assets/Capture 1.jpg" alt="doctor-img">
-                </div>
-            </div>
-        </div>
-    </div>
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
 
-    <script>
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function() {
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
-    </script>
-    <footer>
-        <p>&copy; 2023 MediCare. All rights reserved.</p>
-      </footer>
-</body>
+.logo {
+  margin-right: 20px; 
+}
 
-</html>
+
+.logo img {
+  max-width: 150px;
+}
+
+.nav-links ul {
+  display: flex;
+  font-size: 25px;
+  gap: 100px;
+}
+
+.nav-links li {
+  margin-left: 22px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  border-radius: 188px;
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 15px; 
+}
+
+/* Body styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.text-container {
+  
+  flex: 1;
+}
+
+.text-container h1 {
+  font-size: 70px; 
+}
+
+.text-container p {
+  font-size: 11x; 
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 9px 45px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-signup {
+  background-color: #ff0000; 
+}
+
+.btn-signin {
+  background-color: transparent;
+  border: 1px solid #ff0000; 
+  color: #ff0000; 
+}
+
+.btn-signup:hover {
+  background-color: #fff; 
+  color: #ff0000; 
+}
+
+.btn-signin:hover {
+  background-color: #ff0000; 
+  color: #fff; 
+}
+
+.image-container img {
+  max-width: 100%; 
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Add responsive styles here */
+}
+
+@media (max-width: 576px) {
+  /* Add mobile-specific styles here */
+}
