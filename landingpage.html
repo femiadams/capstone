@@ -1,44 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical Emergency Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="landingpage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Emergency Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <img src="medicalapplogo.jpg" alt="Logo">
-    </div>
-    <nav class="nav-links">
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="diagnosis.html">Services</a></li>
-        <li><a href="emergencynumber.html">Contact</a></li>
-        <li><a href="#About Us">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <img src="Assets/med image.jpeg" alt="logo">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-area">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="diagnosis.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Live Chat" class="active">Live Chat</a></li>
+                <li><a href="emergencynumbers.html">Emergency Phone Numbers</a></li>
+            </ul>
+        </nav>
+        
+    </header>
 
-  <div class="container">
-    <div class="text-container">
-      <h1>The Need For Prompt Emergency Services</h1>
-      <p>We are dedicated to First Aid of Children, Adolescents & Adults. We save lives by giving immediate assistance.</p>
-      <div class="buttons-container">
-        <a href="signup.html" class="btn btn-signup">Sign Up</a>
-        <a href="signin.html" class="btn btn-signin">Sign In</a>
+    <div class="home">
+        <div class="main-home">
+            <div class="main-inner-home">
+                <h1>The Need For</h1>
+                <h1>Prompt Emergency</h1>
+                <h1>Services</h1>
+                <br>
+                <p>We are dedicated to First Aid of Children,</p>
+                <p>Adolescents & Adults. We save lives by giving</p>
+                <p>immediate assitance</p>
+                <br>
+                <br>
+                <a href="signup.html" class="active">Sign Up</a>
+                <a href="signin.html" class="inactive">Sign In</a>
+            </div>
+            <br>
+            <div class="main-inner-home">
+                <div class="right-content-img">
+                    <img src="Assets/Capture 1.jpg" alt="doctor-img">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+  <header>
+    <h1>About Us</h1>
+    <div class="short-red-line"></div>
+    <div class="red-line"></div>
+    <div class="short-red-line"></div>
+  </header> -->
+
+  <!-- <div class="container">
+    <div class="about-section">
+      <div class="about-image">
+        <img src="./Assets/Rectangle 1463.png" alt="Image 1">
+      </div>
+      <div class="about-text">
+        <h2>First Aid Kit - Free</h2>
+        <p>We are commited to your health and well being offering the very latest in comprehensive evidence - based care.</p>
       </div>
     </div>
-    <div class="image-container">
-      <img src="femaledoc.jpg" alt="Emergency Worker Image">
-    </div>
-  </div>
 
-  
+    <div class="about-section">
+      <div class="about-image">
+        <img src="./Assets/Rectangle 1464.png" alt="Image 2">
+      </div>
+      <div class="about-text">
+        <h2>24hours Healthcare Services</h2>
+        <p>We are always available for immediate action offering the </p>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <div class="about-image">
+        <img src="./Assets/Rectangle 1466.png" alt="Image 3">
+      </div>
+      <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ipsum felis. Vestibulum blandit nibh sit amet lorem dictum, eget gravida turpis ultrices. Integer luctus, elit vel volutpat semper, mauris felis semper enim.</p>
+      </div>
+    </div>
+  </div> -->
+</body>
+</html>
+
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <footer>
+        <p>&copy; 2023 MediCare. All rights reserved.</p>
+      </footer>
 </body>
 
 </html>
