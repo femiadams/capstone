@@ -1,27 +1,23 @@
-function showMedicalRecords() {
-  hideAll
+document.addEventListener('DOMContentLoaded', function () {
+  const userName = document.getElementById('userName');
+  const userAge = document.getElementById('userAge');
+  const userGender = document.getElementById('userGender');
+  const userEmail = document.getElementById('userEmail');
+  const userPhone = document.getElementById('userPhone');
 
-t.getElementById("medicalRecordsContent").style.display = "block";
-}
+  // Assume you have fetched the user details from the database
+  const userDetails = {
+    name: 'John Doe',
+    age: 30,
+    gender: 'Male',
+    email: 'john@example.com',
+    phone: '+123 456 7890'
+  };
 
-function showAppointments() {
-  hideAllContents();
-  document.getElementById("appointmentsContent").style.display = "block";
-}
-
-function showPrescriptions() {
-  hideAllContents();
-  document.getElementById("prescriptionsContent").style.display = "block";
-}
-
-function showSettings() {
-  hideAllContents();
-  document.getElementById("settingsContent").style.display = "block";
-}
-
-function hideAllContents() {
-  const contents = document.getElementsByClassName("content");
-  for (const content of contents) {
-    content.style.display = "none";
-  }
-}
+  // Update the user details in the dashboard
+  userName.textContent = userDetails.name;
+  userAge.textContent = userDetails.age;
+  userGender.textContent = userDetails.gender;
+  userEmail.textContent = userDetails.email;
+  userPhone.textContent = userDetails.phone;
+});

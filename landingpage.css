@@ -1,305 +1,108 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-
-* {
-  font-family: "Poppins", sans-serif;
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  list-style: none;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-body {
-  background-color: #fefefe;
 }
 
 header {
-  width: 100%;
-  height: 80px;
-  background: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  align-items: center;
+  background-color: #f8f6f6;
+  padding: 10px 20px;
 }
 
 .logo img {
-  width: 90px;
-  float: left;
-  padding-left: 5%;
-  padding-top: 2%;
+  height: 100px;
 }
 
-.hamburger {
-  display: none;
-}
-
-.nav-bar ul {
-  display: flex;
-}
-.nav-bar ul li a {
-  display: block;
-  color: black;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 10px 25px;
-  border-radius: 50px;
-  transition: 0.2s;
-  margin: 0 5px;
-  margin-bottom: 1px;
-}
-
-.nav-bar ul li a:hover {
-  color: #fefefe;
-  background: #f20000;
-}
-
-.nav-bar ul li a.active {
-  color: #fefefe;
-  background: #f20000;
-}
-
-.home {
-  padding: 2rem 7%;
-  width: 100%;
-  background-color: #fefefe;
-}
-.main-home {
-  display: flex;
-  flex-wrap: wrap;
-}
-.main-inner-home {
-  flex: 1 1 20rem;
-}
-
-.main-inner-home a.active {
-  background: #f20000;
-  color: #fefefe;
-  padding: 0.7rem 1rem;
-  border-radius: 50px;
-}
-.main-inner-home a.inactive {
-  color: black;
-  padding: 0.7rem 1rem;
-  border-radius: 50px;
-  border: 1px solid red;
-  margin-left: 10px;
-}
-.main-inner-home .right-content-img img {
-  width: 85%;
-  margin-top: 1.5rem;
-}
-
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  header {
-    padding: 0 30px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-  .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: #f20000;
-    margin: 6px 0;
-  }
-  .nav-bar {
-    height: 0;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background: #fefefe;
-    transition: 0.2s;
-    overflow: hidden;
-  }
-  .nav-bar.active {
-    height: 450px;
-  }
-  .nav-bar ul {
-    display: block;
-    width: fit-content;
-    margin: 80px auto 0 auto;
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;
-  }
-  .nav-bar.active ul {
-    opacity: 1;
-  }
-  nav-bar ul li a {
-    margin-bottom: 12px;
-  }
-  .main-home {
-    padding-top: 28rem;
-  }
-  .main-inner-home .right-content-img img {
-    width: 85%;
-    padding-top: 2rem;
-    /* padding: 2rem;
-    margin-left: 25px; */
-  }
-}
-
-/* .container {
-  padding: relative;
-  padding-right: 100px;
-}
-
- h1, p {
-   align-items: left; 
-  margin: 10px 0; 
-  justify-content: left;
-  align-items: center;
-  flex-wrap: wrap; 
- }  */
-/* .rightImage {
-  size: 50px;
-  width: 2px;
-  float: left;
-  padding-left: 5%;
-  padding-top: 2%; 
-   position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 300px; 
- } */
-
-/* .h1{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.main-inner-home {
-  flex: 1 1 45rem;
-}
-.main-inner-home .right-content-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100px;
-} */
-
-/* main {
-  width: 100vw;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-}
-main.wrapper {
-  width: 90vw;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-.wrapper .cont {
-  width: 20%;
-}
-.wrapper .cont:nth-child(2) {
-  height: 600px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper .cont h1 {
-  font-size: 80px;
-  color: black;
-}
-.wrapper .cont a {
-  display: inline-block;
-  color: black;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 30px;
-  background-color: #f20000;
-} */
-
-/* .*/
-/*:root {
-  --red: #f20000;
-  --blue: #1511e3;
-  --light-color: #777;
-  --white: #ffffff;
-  --black: #000000;
-  --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
-  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
-  --border: 0.2rem solid var(--blue);
-}*/
-
-/*.wrapper {
-  width: 1170px;
-  margin: auto;
-}
-
-.body {
-  background-color: azure;
-}
-
-.nav-area {
-  position: absolute;
-  float: right;
+.nav-links ul {
   list-style: none;
-  margin-top: 20px;
-  padding-right: 10px;
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: var(--box-shadow);
-}
-.nav-area li {
-  display: inline-block;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  display: flex;
 }
 
-.nav-area li a {
-  color: #000000;
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
   text-decoration: none;
-  padding: 5px 20px;
-  font-size: 14px;
+  color: black;
+  border: 1px solid transparent;
+  padding: 5px 10px;
 }
 
-.nav-area li a:hover {
-  background: #1511e3;
-  color: #333;
+.nav-links a:hover {
+  color: rgb(11, 11, 11);
+  border-color: red;
+  background-color: red;
+  border-radius: 100px;
+  padding: 10px 20px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
 
-/*#menu-btn {
-  font-size: 2.5rem;
-  border-radius: 0.5rem;
-  background: #eee;
-  color: var(--blue);
-  padding: 1rem 1.5rem;
+.main-content {
+  padding-top: 100px;
+}
+
+.main-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 100px;
   cursor: pointer;
- } */
-
-/*.welcome-text {
-  position: absolute;
-  margin: 20% 30%;
-  float: left;
-  text-align: left;
-  padding-left: 0%;
-  padding-top: 0%;
+  transition: background-color 0.3s;
 }
 
-.welcome-text h1 {
-  text-align: left;
-  color: #000000;
-  text-transform: uppercase;
-  font-size: 64px;
+.btn-signup {
+  background-color: red;
 }
 
-.welcome-text p {
-  color: #000000;
-}*/
+.btn-signup:hover {
+  background-color: white;
+  color: red;
+}
+
+.btn-signin {
+  background-color: white;
+  color: red;
+}
+
+.btn-signin:hover {
+  background-color: red;
+}
+
+
+.image-container {
+  width: 60%; 
+  height: 10px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+

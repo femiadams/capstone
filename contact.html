@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <a href="emergencynumbers.html"></a>
+</head>
+
+<body>
+
+  <nav class="sidebar">
+    <!-- Sidebar content (same as before) -->
+  </nav>
+
+  <div class="main-content">
+    <h1>Contact Information</h1>
+    <p>For any inquiries, please contact us at:</p>
+    <ul>
+      <li>Email: contact@medicalapp.com</li>
+      <li>Phone: +230 8000000000</li>
+    </ul>
+  </div>
+
+  <script src="dashboard.js">
+    // Example JavaScript to update contact information
+document.addEventListener('DOMContentLoaded', function () {
+  const contactEmail = document.getElementById('contactEmail');
+  const contactPhone = document.getElementById('contactPhone');
+  const contactAddress = document.getElementById('contactAddress');
+
+  // Update contact information as needed
+  contactEmail.textContent = 'contact@example.com';
+  contactPhone.textContent = '+123 456 7890';
+  contactAddress.textContent = '123 Medical Avenue, City';
+});
+
+  </script>
+</body>
+
+</html>
